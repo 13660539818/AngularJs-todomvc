@@ -104,6 +104,17 @@
 			}
 			now = !now;
 		};
+
+		/**
+		 * test code
+		 */
+		var now = false;
+		$scope.toggleAll = function() {
+			for(var i = 0;i < $scope.todos.length; i++) {
+				$scope.todos[i].completed = now;
+			}
+			now = !now;
+		};
 	}]);
 
 })(angular);
